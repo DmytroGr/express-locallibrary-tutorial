@@ -27,5 +27,7 @@ AuthorSchema.virtual("url").get(function() {
     return `/catalog/author/${this._id}`;
 });
 
+// Virtual for a better Date format
+
 // Export model
 module.exports = mongoose.model("Author", AuthorSchema);

@@ -28,6 +28,18 @@ AuthorSchema.virtual("url").get(function() {
 });
 
 // Virtual for a better Date format
+AuthorSchema.virtual("date_of_birth_formatted").get(function() {
+    let birth_formatted = "";
+    birth_formatted = this.date_of_birth ? DateTime.fromJSDate(this.date_of_birth).toLocaleString(DateTime.DATE_MED) : 'N/A';
+    return birth_formatted;
+});
+
+AuthorSchema.virtual("date_of_death_formatted").get(function() {
+    let death_formatted = "";
+    death_formatted = this.date_of_death ? DateTime.fromJSDate(this.date_of_death).toLocaleString(DateTime.DATE_MED) : 'N/A';
+    return death_formatted;
+});
+
 
 // Export model
 module.exports = mongoose.model("Author", AuthorSchema);

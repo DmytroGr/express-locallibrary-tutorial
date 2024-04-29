@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "79835509-30f0-41a4-bf60-c2bc51c1c4d3",
+		"name": "Express local library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34594377"
+	},
+	"item": [
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "Book Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/catalog/book/65f5b5db54bf99e6a2858252",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"catalog",
+								"book",
+								"65f5b5db54bf99e6a2858252"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Book List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/books",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Author",
+			"item": [
+				{
+					"name": "Author Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/catalog/author/65f5b5db54bf99e6a2858247",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"catalog",
+								"author",
+								"65f5b5db54bf99e6a2858247"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Author List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/authors",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"authors"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BookInstance",
+			"item": [
+				{
+					"name": "BookInstance Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/catalog/bookinstance/65f5b5dc54bf99e6a2858262",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"catalog",
+								"bookinstance",
+								"65f5b5dc54bf99e6a2858262"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BookInstance List",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Genre",
+			"item": [
+				{
+					"name": "Genre Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/catalog/genre/65f5b5db54bf99e6a285823f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"catalog",
+								"genre",
+								"65f5b5db54bf99e6a285823f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Genre List",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://localhost:3000/catalog",
+			"type": "string"
+		},
+		{
+			"key": "Testbooks",
+			"value": "65f5b5db54bf99e6a2858252",
+			"type": "string"
+		}
+	]
+}

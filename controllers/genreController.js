@@ -27,11 +27,12 @@ exports.genre_detail = asyncHandler(async(req, res, next) => {
         return next(err);
     }
 
-    res.render("genre_detail", {
-        title: "Genre Detail",
-        genre: genre,
-        genre_books: booksInGenre,
-    });
+    // res.render("genre_detail", {
+    //     title: "Genre Detail",
+    //     genre: genre,
+    //     genre_books: booksInGenre,
+    // });
+    res.json({ genre_detail: genre });
 });
 
 

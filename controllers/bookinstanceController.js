@@ -26,10 +26,11 @@ exports.bookinstance_detail = asyncHandler(async(req, res, next) => {
         return next(err);
     }
 
-    res.render("bookinstance_detail", {
-        title: "Book:",
-        bookinstance: bookInstance,
-    });
+    // res.render("bookinstance_detail", {
+    //     title: "Book:",
+    //     bookinstance: bookInstance,
+    // });
+    res.json({ bookinstance_detail: bookInstance });
 });
 
 

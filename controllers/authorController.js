@@ -27,11 +27,12 @@ exports.author_detail = asyncHandler(async(req, res, next) => {
         return next(err);
     }
 
-    res.render("author_detail", {
-        title: "Author Detail",
-        author: author,
-        author_books: allBooksByAuthor,
-    });
+    // res.render("author_detail", {
+    //     title: "Author Detail",
+    //     author: author,
+    //     author_books: allBooksByAuthor,
+    //});
+    res.json({ author_detail: author });
 });
 
 
